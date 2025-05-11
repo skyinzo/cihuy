@@ -1,0 +1,39 @@
+body {
+  background-color: #fff0f5;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.envelope {
+  background-color: #ffb6c1;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.envelope:hover {
+  background-color: #ffa6c9;
+}
+
+.message {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border: 2px dashed pink;
+  border-radius: 10px;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
